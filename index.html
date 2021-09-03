@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- bootstrap CSS cdn link  -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>WEATHER</title>
+	</head>
+	<body>
+		<div class="weather-wrapper">
+			<div class="container">
+				<section>
+					<div class="mt-4">
+						<div class="row justify-content-center m-auto">
+							<div class="col-lg-4 col-md-5 col-12">
+								<input
+									id="weather-input"
+									type="text"
+									placeholder="Enter location"
+									class="form-control"
+								/>
+							</div>
+							<div
+								class="
+									text-sm-center text-md-start
+									col-lg-2 col-md-3 col-5
+									mt-4 mt-md-0
+								"
+							>
+								<button id="weather-btn" class="btn btn-danger">Whether</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					class="
+						text-center
+						disc
+						d-flex
+						align-items-center
+						justify-content-center
+					"
+				>
+					<div class="rounded p-4 text-white">
+						<div class="icon">
+							<img id="icon" src="./image/icon.png" alt="weather-icon" />
+						</div>
+						<h1 id="name">Nothing to show!!</h1>
+						<h3><span id="tem">00</span>&#176;C</h3>
+						<h6 id="weather">Nothing</h6>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
